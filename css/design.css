@@ -1,0 +1,263 @@
+body, html {
+  font-family: verdana, sans-serif;
+  text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  width: 100% !important;
+	height: 100% !important;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #660000;
+}
+
+.bg-parallax-1 {
+  background-image: url('../images/bg-parallax.jpg');
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg-parallax-2 {
+  background-image: url('../images/bg-parallax2.jpg');
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg-parallax-3 {
+  background-image: url('../images/bg-parallax3.jpg');
+  height: 400px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header-parallax {
+  background-image: url('../images/bg-parallax3.jpg');
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-float {
+  width: 500px;
+  height: auto;
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+
+}
+
+.logo-hover:hover {
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.animateOnce {
+  -webkit-animation: shakeLogo 1.2s normal forwards;
+  -moz-animation: shakeLogo 1.2s normal forwards;
+
+}
+
+@keyframes shakeLogo {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.intro {
+	display: table;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: #fff;
+	background: url(../images/redvelvetcake.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro .overlay {
+	padding: 20px 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7a5a5+1,f74a4a+40,c90300+100 */
+  background: rgb(247,165,165); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(247,165,165,0.7) 1%, rgba(247,74,74,0.7) 40%, rgba(201,3,0,0.7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(247,165,165,0.7) 1%,rgba(247,74,74,0.7) 40%,rgba(201,3,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(247,165,165,0.7) 1%,rgba(247,74,74,0.7) 40%,rgba(201,3,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7a5a5', endColorstr='#c90300',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.intro H1 {
+	font-size: 70px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.intro .intro-text p {
+	font-size: 30px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+hr {
+  height: 3px;
+  color: red;
+  background-color: red;
+  border-color: red;
+}
+
+.hrpara {
+  height: 1px;
+  color: red;
+  background-color: red;
+}
+
+p {
+  font-size: 16px;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #660000;
+  padding: 25px;
+}
+
+.footerh2 {
+  color: #e6e6e6;
+}
+
+h4 {
+  color: #e6e6e6;
+}
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+  max-height: 600px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none;
+}
+}
+
+.animated.rubberBand {
+  animation: rubberBand 1.5s infinite;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#titleAni1 {
+  margin-top: -10%;
+}
+
+.middleText {
+  font-size: 75px;
+  color: #fff;
+  -webkit-text-stroke-width: 3px;
+  -moz-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #660000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
+}
+
+.middleText2 {
+  font-size: 50px;
+  color: #fff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #660000;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
+}
+
+.well {
+  background-color: pink;
+}
